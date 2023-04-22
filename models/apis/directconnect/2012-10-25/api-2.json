@@ -1503,7 +1503,8 @@
     "DescribeConnectionsRequest":{
       "type":"structure",
       "members":{
-        "connectionId":{"shape":"ConnectionId"}
+        "connectionId":{"shape":"ConnectionId"},
+        "testId":{"shape":"TestId"}
       }
     },
     "DescribeCustomerMetadataResponse":{

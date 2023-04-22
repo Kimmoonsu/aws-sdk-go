@@ -9437,6 +9437,8 @@ type DescribeConnectionsInput struct {
 
 	// The ID of the connection.
 	ConnectionId *string `locationName:"connectionId" type:"string"`
+
+	TestId *string `locationName:"testId" type:"string"`
 }
 
 // String returns the string representation.
@@ -9460,6 +9462,12 @@ func (s DescribeConnectionsInput) GoString() string {
 // SetConnectionId sets the ConnectionId field's value.
 func (s *DescribeConnectionsInput) SetConnectionId(v string) *DescribeConnectionsInput {
 	s.ConnectionId = &v
+	return s
+}
+
+// SetTestId sets the TestId field's value.
+func (s *DescribeConnectionsInput) SetTestId(v string) *DescribeConnectionsInput {
+	s.TestId = &v
 	return s
 }
 
